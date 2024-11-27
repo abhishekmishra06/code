@@ -1,0 +1,37 @@
+  
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="username-container">
+    <h2>Enter Your Username</h2>
+    <input type="text" id="usernameInput" placeholder="Enter your username..." />
+    <button id="startChatButton">Start Chat</button>
+  </div>
+
+  <div class="chat-container" id="chat-container" style="display: none;">
+    <header class="chat-header">
+      <h1>💻 Hacker Chat</h1>
+    </header>
+    <div class="chat-messages" id="chat-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="https://chat-room-deoh.onrender.com/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
