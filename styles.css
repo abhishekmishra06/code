@@ -10,7 +10,30 @@ body {
     align-items: center;
     height: 100vh;
   }
-  
+
+  /* Full-screen GIF container */
+#gif-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* Optional background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden; /* Ensure no overflow if the GIF exceeds the container */
+}
+
+/* GIF styling */
+#gif-container img {
+  width: 100%; /* Stretch image to container's width */
+  height: 100%; /* Stretch image to container's height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+
   /* Username Container */
   #username-container {
     text-align: center;

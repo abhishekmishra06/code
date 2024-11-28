@@ -8,6 +8,13 @@ const chatContainer = document.getElementById('chat-container');
 const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
 const chatMessages = document.getElementById('chat-messages');
+const gifContainer = document.getElementById('gif-container');
+
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    gifContainer.style.display='none';
+  },3000);
+});
 
 // Store the username
 let username = '';
